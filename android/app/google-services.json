@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987671894602",
+    "project_id": "app-chiase-hinhanh",
+    "storage_bucket": "app-chiase-hinhanh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987671894602:android:0ee54484688b70d45b64b3",
+        "android_client_info": {
+          "package_name": "com.example.chiase_hinhanh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXQF0HoOi3lhc5XSOFK190CrFlgLdC-h4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
