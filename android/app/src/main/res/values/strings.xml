@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">730920135177471</string>
+    <string name="fb_login_protocol_scheme">fb730920135177471</string>
+    <string name="facebook_client_token">51f749214f4fd0aecdda8d393681864d</string>
+    <string name='app_name'>Chia Sẽ Hình Ảnh</string>
+</resources>
