@@ -2,6 +2,7 @@ import 'package:chiase_hinhanh/state/auth/providers/auth_state_provider.dart';
 import 'package:chiase_hinhanh/state/auth/providers/is_logged_in_provider.dart';
 import 'package:chiase_hinhanh/state/providers/is_loading_provider.dart';
 import 'package:chiase_hinhanh/view/compoments/loading/loading_scree.dart';
+import 'package:chiase_hinhanh/view/login/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -83,37 +84,6 @@ class MainView extends StatelessWidget {
             child: const Text("Đăng Xuất"),
           );
         },
-      ),
-    );
-  }
-}
-
-class LoginView extends ConsumerWidget {
-  const LoginView({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Đăng Nhập'),
-      ),
-      body: Column(
-        children: [
-          TextButton(
-            onPressed: ref.read(authStateProvider.notifier).loginWithGoogle,
-            child: const Text(
-              'Đăng kí với Google',
-            ),
-          ),
-          TextButton(
-            onPressed: ref.read(authStateProvider.notifier).loginWithFacebook,
-            child: const Text(
-              'Đăng kí với Facebook',
-            ),
-          ),
-        ],
       ),
     );
   }
