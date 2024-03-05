@@ -3,6 +3,7 @@ import 'package:chiase_hinhanh/state/auth/providers/is_logged_in_provider.dart';
 import 'package:chiase_hinhanh/state/providers/is_loading_provider.dart';
 import 'package:chiase_hinhanh/view/compoments/loading/loading_scree.dart';
 import 'package:chiase_hinhanh/view/login/login_view.dart';
+import 'package:chiase_hinhanh/view/main/main_view.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -66,25 +67,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MainView extends StatelessWidget {
-  const MainView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Trang Chủ'),
-      ),
-      body: Consumer(
-        builder: (context, ref, child) {
-          return TextButton(
-            onPressed: () async {
-              ref.read(authStateProvider.notifier).logOut();
-            },
-            child: const Text("Đăng Xuất"),
-          );
-        },
-      ),
-    );
-  }
-}

@@ -20,7 +20,7 @@ class EmptyContentsWithTextAnimationView extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .titleLarge
-                  ?.copyWith(color: Colors.white54),
+                  ?.copyWith(color: Colors.black54),
             ),
           ),
           const EmptyContentAnimationView(),

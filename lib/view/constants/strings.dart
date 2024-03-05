@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 @immutable
 class Strings {
   static const appName = 'Chia Sẻ 123';
-  static const welcomeToAppName = 'Chào mứng đến ${Strings.appName}';
+  static const welcomeToAppName = 'Chào mừng đến \n${Strings.appName}';
   static const youHaveNoPosts =
       'Bạn chưa có bài đăng nào. Nhấn đăng video hoặc đăng ảnh để tạo bài đăng đầu tiên của bạn!';
   static const noPostsAvailable =
@@ -31,7 +31,7 @@ class Strings {
   static const enterYourSearchTermHere = 'Nhập từ khóa tìm kiếm ở đây';
 
   // login view rich text at bottom
-  static const dontHaveAnAccount = "Bạn có tài khoản chưa?\n";
+  static const dontHaveAnAccount = "Chưa có tài khoản?\n";
   static const signUpOn = 'Đặng kí tại ';
   static const orCreateAnAccountOn = ' hoặc tạo tài khoản ở ';
   const Strings._();
