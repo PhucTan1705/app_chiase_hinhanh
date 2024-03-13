@@ -1,5 +1,6 @@
 import 'package:chiase_hinhanh/state/posts/models/post.dart';
 import 'package:chiase_hinhanh/view/compoments/post/post_thumbnail_view.dart';
+import 'package:chiase_hinhanh/view/post_comments/post_comment_view.dart';
 import 'package:flutter/material.dart';
 
 class PostGridView extends StatelessWidget {
@@ -23,7 +24,9 @@ class PostGridView extends StatelessWidget {
         final post = posts.elementAt(index);
         return PostThumbnailView(
           post: post,
-          onTapped: () {},
+          onTapped: () {
+            
+          },
         );
       },
     );

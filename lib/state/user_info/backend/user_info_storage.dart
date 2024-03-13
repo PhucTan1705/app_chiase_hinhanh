@@ -1,7 +1,7 @@
 import 'package:chiase_hinhanh/state/constants/firebase_collection_name.dart';
 import 'package:chiase_hinhanh/state/constants/firebase_field_name.dart';
 import 'package:chiase_hinhanh/state/posts/typedefs/user_id.dart';
-import 'package:chiase_hinhanh/state/user_info/user_info_payload.dart';
+import 'package:chiase_hinhanh/state/user_info/models/user_info_payload.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart' show immutable;
 

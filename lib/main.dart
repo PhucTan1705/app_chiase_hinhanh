@@ -1,4 +1,3 @@
-import 'package:chiase_hinhanh/state/auth/providers/auth_state_provider.dart';
 import 'package:chiase_hinhanh/state/auth/providers/is_logged_in_provider.dart';
 import 'package:chiase_hinhanh/state/providers/is_loading_provider.dart';
 import 'package:chiase_hinhanh/view/compoments/loading/loading_scree.dart';

@@ -1,7 +1,11 @@
 import 'package:chiase_hinhanh/state/auth/providers/auth_state_provider.dart';
+import 'package:chiase_hinhanh/state/image_upload/helpers/imgae_picker_helper.dart';
+import 'package:chiase_hinhanh/state/image_upload/models/file_type.dart';
+import 'package:chiase_hinhanh/state/post_setting/providers/post_setting_provider.dart';
 import 'package:chiase_hinhanh/view/compoments/dialogs/alter_dialog_model.dart';
 import 'package:chiase_hinhanh/view/compoments/dialogs/log_out_dialog.dart';
 import 'package:chiase_hinhanh/view/constants/strings.dart';
+import 'package:chiase_hinhanh/view/create_new_post/create_new_posts_view.dart';
 import 'package:chiase_hinhanh/view/tabs/user_posts/user_posts_view.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -25,16 +29,64 @@ class _MainViewState extends ConsumerState<MainView> {
           ),
           actions: [
             IconButton(
-              icon: const FaIcon(
-                FontAwesomeIcons.film,
-              ),
-              onPressed: () async {},
-            ),
-            IconButton(
               icon: const Icon(
                 Icons.add_photo_alternate_outlined,
               ),
-              onPressed: () async {},
+              onPressed: () async {
+                // chon anh
+                final imageFile =
+                    await ImagePickerHelper.pickImageFromGallery();
+                if (imageFile == null) {
+                  return;
+                }
+
+                ref.refresh(postSettingProvider);
+
+                //
+                if (!mounted) {
+                  return;
+                }
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => CreateNewPostsView(
+                      filePosts: imageFile,
+                      fileType: FileType.image,
+                    ),
+                  ),
+                );
+              },
+            ),
+            IconButton(
+              icon: const FaIcon(
+                FontAwesomeIcons.film,
+              ),
+              onPressed: () async {
+                // chon video
+                final videoFile =
+                    await ImagePickerHelper.pickVideoFromGallery();
+                if (videoFile == null) {
+                  return;
+                }
+
+                ref.refresh(postSettingProvider);
+
+                //
+                if (!mounted) {
+                  return;
+                }
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => CreateNewPostsView(
+                      filePosts: videoFile,
+                      fileType: FileType.video,
+                    ),
+                  ),
+                );
+              },
             ),
             IconButton(
               icon: const Icon(
