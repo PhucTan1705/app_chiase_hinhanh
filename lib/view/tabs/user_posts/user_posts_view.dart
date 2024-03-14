@@ -1,8 +1,8 @@
 import 'package:chiase_hinhanh/state/posts/providers/user_posts_provider.dart';
-import 'package:chiase_hinhanh/view/compoments/animations/empty_contents_with_text_animation_view.dart';
-import 'package:chiase_hinhanh/view/compoments/animations/error_animation_view.dart';
-import 'package:chiase_hinhanh/view/compoments/animations/loading_animation_view.dart';
-import 'package:chiase_hinhanh/view/compoments/post/posts_grid_view.dart';
+import 'package:chiase_hinhanh/view/components/animations/empty_contents_with_text_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/animations/error_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/animations/loading_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/post/posts_grid_view.dart';
 import 'package:chiase_hinhanh/view/constants/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';

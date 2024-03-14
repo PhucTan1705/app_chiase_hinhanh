@@ -3,10 +3,10 @@ import 'package:chiase_hinhanh/state/comments/models/post_comment_request.dart';
 import 'package:chiase_hinhanh/state/comments/providers/post_comment_provider.dart';
 import 'package:chiase_hinhanh/state/comments/providers/send_comment_provider.dart';
 import 'package:chiase_hinhanh/state/posts/typedefs/post_id.dart';
-import 'package:chiase_hinhanh/view/compoments/animations/empty_contents_with_text_animation_view.dart';
-import 'package:chiase_hinhanh/view/compoments/animations/error_animation_view.dart';
-import 'package:chiase_hinhanh/view/compoments/animations/loading_animation_view.dart';
-import 'package:chiase_hinhanh/view/compoments/comment/comment_tile.dart';
+import 'package:chiase_hinhanh/view/components/animations/empty_contents_with_text_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/animations/error_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/animations/loading_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/comment/comment_tile.dart';
 import 'package:chiase_hinhanh/view/constants/strings.dart';
 
 import 'package:chiase_hinhanh/view/extentions/dismiss_keyboard.dart';

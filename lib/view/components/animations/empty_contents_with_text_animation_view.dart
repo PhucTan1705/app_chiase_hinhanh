@@ -1,4 +1,4 @@
-import 'package:chiase_hinhanh/view/compoments/animations/empty_contents_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/animations/empty_contents_animation_view.dart';
 import 'package:flutter/material.dart';
 
 class EmptyContentsWithTextAnimationView extends StatelessWidget {

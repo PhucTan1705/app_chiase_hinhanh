@@ -1,6 +1,6 @@
 import 'package:chiase_hinhanh/state/auth/providers/is_logged_in_provider.dart';
 import 'package:chiase_hinhanh/state/providers/is_loading_provider.dart';
-import 'package:chiase_hinhanh/view/compoments/loading/loading_scree.dart';
+import 'package:chiase_hinhanh/view/components/loading/loading_scree.dart';
 import 'package:chiase_hinhanh/view/login/login_view.dart';
 import 'package:chiase_hinhanh/view/main/main_view.dart';
 import 'package:flutter/material.dart';

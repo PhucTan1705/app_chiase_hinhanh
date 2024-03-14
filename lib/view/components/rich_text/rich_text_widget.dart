@@ -1,5 +1,5 @@
-import 'package:chiase_hinhanh/view/compoments/rich_text/base_text.dart';
-import 'package:chiase_hinhanh/view/compoments/rich_text/link_text.dart';
+import 'package:chiase_hinhanh/view/components/rich_text/base_text.dart';
+import 'package:chiase_hinhanh/view/components/rich_text/link_text.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 

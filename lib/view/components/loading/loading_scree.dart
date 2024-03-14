@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:chiase_hinhanh/view/compoments/constants/string.dart';
-import 'package:chiase_hinhanh/view/compoments/loading/loading_screen_controller.dart';
+import 'package:chiase_hinhanh/view/components/constants/string.dart';
+import 'package:chiase_hinhanh/view/components/loading/loading_screen_controller.dart';
 import 'package:flutter/material.dart';
 
 class LoadingScreen {

@@ -1,4 +1,4 @@
-import 'package:chiase_hinhanh/view/compoments/rich_text/base_text.dart';
+import 'package:chiase_hinhanh/view/components/rich_text/base_text.dart';
 import 'package:flutter/foundation.dart' show immutable, VoidCallback;
 
 @immutable

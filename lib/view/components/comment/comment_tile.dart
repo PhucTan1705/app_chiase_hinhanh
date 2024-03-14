@@ -2,10 +2,10 @@ import 'package:chiase_hinhanh/state/auth/providers/user_id_provider.dart';
 import 'package:chiase_hinhanh/state/comments/models/comment.dart';
 import 'package:chiase_hinhanh/state/comments/providers/delete_comment_provider.dart';
 import 'package:chiase_hinhanh/state/user_info/providers/user_info_model_provider.dart';
-import 'package:chiase_hinhanh/view/compoments/animations/small_error_animation_view.dart';
-import 'package:chiase_hinhanh/view/compoments/constants/string.dart';
-import 'package:chiase_hinhanh/view/compoments/dialogs/alter_dialog_model.dart';
-import 'package:chiase_hinhanh/view/compoments/dialogs/delete_dialog.dart';
+import 'package:chiase_hinhanh/view/components/animations/small_error_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/constants/string.dart';
+import 'package:chiase_hinhanh/view/components/dialogs/alter_dialog_model.dart';
+import 'package:chiase_hinhanh/view/components/dialogs/delete_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

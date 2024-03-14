@@ -8,6 +8,7 @@ class Strings {
   static const loading = 'Đang Tải...';
 
   static const person = 'người';
+  static const people = 'người';
   //static const people = 'người';
   static const likedThis = 'thích điều này';
 

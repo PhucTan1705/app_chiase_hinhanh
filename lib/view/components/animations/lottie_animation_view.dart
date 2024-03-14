@@ -1,4 +1,4 @@
-import 'package:chiase_hinhanh/view/compoments/animations/models/lottie_animation.dart';
+import 'package:chiase_hinhanh/view/components/animations/models/lottie_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 

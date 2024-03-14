@@ -1,5 +1,5 @@
 import 'package:chiase_hinhanh/state/posts/models/post.dart';
-import 'package:chiase_hinhanh/view/compoments/post/post_thumbnail_view.dart';
+import 'package:chiase_hinhanh/view/components/post/post_thumbnail_view.dart';
 import 'package:chiase_hinhanh/view/post_comments/post_comment_view.dart';
 import 'package:flutter/material.dart';
 

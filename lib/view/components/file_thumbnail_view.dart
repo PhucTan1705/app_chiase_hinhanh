@@ -1,7 +1,7 @@
 import 'package:chiase_hinhanh/state/image_upload/models/thumbnail_request.dart';
 import 'package:chiase_hinhanh/state/image_upload/providers/thumbnail_provider.dart';
-import 'package:chiase_hinhanh/view/compoments/animations/loading_animation_view.dart';
-import 'package:chiase_hinhanh/view/compoments/animations/small_error_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/animations/loading_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/animations/small_error_animation_view.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
