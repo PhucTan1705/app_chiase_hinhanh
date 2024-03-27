@@ -2,6 +2,7 @@ import 'package:chiase_hinhanh/state/posts/providers/posts_by_search_term_provid
 import 'package:chiase_hinhanh/view/components/animations/data_not_found_animation_virew.dart';
 import 'package:chiase_hinhanh/view/components/animations/empty_contents_with_text_animation_view.dart';
 import 'package:chiase_hinhanh/view/components/animations/error_animation_view.dart';
+import 'package:chiase_hinhanh/view/components/post/post_sliver_grid_view.dart';
 import 'package:chiase_hinhanh/view/components/post/posts_grid_view.dart';
 import 'package:chiase_hinhanh/view/constants/strings.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +17,10 @@ class SearchGridView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (searchTerm.isEmpty) {
-      return const EmptyContentsWithTextAnimationView(
-        text: Strings.enterYourSearchTerm,
+      return const SliverToBoxAdapter(
+        child: EmptyContentsWithTextAnimationView(
+          text: Strings.enterYourSearchTerm,
+        ),
       );
     }
 
@@ -30,19 +33,25 @@ class SearchGridView extends ConsumerWidget {
     return posts.when(
       data: (posts) {
         if (posts.isEmpty) {
-          return const DataNotFoundAnimationView();
+          return const SliverToBoxAdapter(
+            child: DataNotFoundAnimationView(),
+          );
         } else {
-          return PostGridView(
+          return PostSliverGridView(
             posts: posts,
           );
         }
       },
       error: (error, stackTrace) {
-        return const ErrorAnimationView();
+        return const SliverToBoxAdapter(
+          child: ErrorAnimationView(),
+        );
       },
       loading: () {
-        return const Center(
-          child: CircularProgressIndicator(),
+        return const SliverToBoxAdapter(
+          child: Center(
+            child: CircularProgressIndicator(),
+          ),
         );
       },
     );
