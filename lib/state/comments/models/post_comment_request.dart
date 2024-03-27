@@ -8,7 +8,6 @@ class RequestForPostAndComments {
   final bool sortByCreatedAt;
   final DateSorting dateSorting;
   final int? limit;
-
   const RequestForPostAndComments({
     required this.postId,
     this.sortByCreatedAt = true,

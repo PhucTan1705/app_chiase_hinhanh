@@ -6,6 +6,7 @@ import 'package:chiase_hinhanh/view/components/dialogs/alter_dialog_model.dart';
 import 'package:chiase_hinhanh/view/components/dialogs/log_out_dialog.dart';
 import 'package:chiase_hinhanh/view/constants/strings.dart';
 import 'package:chiase_hinhanh/view/create_new_post/create_new_posts_view.dart';
+import 'package:chiase_hinhanh/view/tabs/search/search_view.dart';
 import 'package:chiase_hinhanh/view/tabs/user_posts/user_posts_view.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -125,7 +126,7 @@ class _MainViewState extends ConsumerState<MainView> {
         body: const TabBarView(
           children: [
             UserPostsView(),
-            UserPostsView(),
+            SearchView(),
             UserPostsView(),
           ],
         ),

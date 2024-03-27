@@ -14,6 +14,7 @@ class PostImageView extends StatelessWidget {
       aspectRatio: post.aspectRatio,
       child: Image.network(
         post.fileUrl,
+        fit: BoxFit.cover,
         loadingBuilder: (context, child, loadingProgress) {
           if (loadingProgress == null) return child;
           return const Center(

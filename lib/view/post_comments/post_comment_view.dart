@@ -14,18 +14,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class PostCommentView extends HookConsumerWidget {
+class PostCommentsView extends HookConsumerWidget {
   final PostId postId;
-  const PostCommentView({
-    super.key,
+
+  const PostCommentsView({
+    Key? key,
     required this.postId,
-  });
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final commentController = useTextEditingController();
-
     final hasText = useState(false);
-
     final request = useState(
       RequestForPostAndComments(
         postId: postId,
@@ -37,12 +37,16 @@ class PostCommentView extends HookConsumerWidget {
       ),
     );
 
-    useEffect(() {
-      commentController.addListener(() {
-        hasText.value = commentController.text.isNotEmpty;
-      });
-      return () {};
-    }, [commentController]);
+    // 
+    useEffect(
+      () {
+        commentController.addListener(() {
+          hasText.value = commentController.text.isNotEmpty;
+        });
+        return () {};
+      },
+      [commentController],
+    );
 
     return Scaffold(
       appBar: AppBar(
@@ -51,6 +55,7 @@ class PostCommentView extends HookConsumerWidget {
         ),
         actions: [
           IconButton(
+            icon: const Icon(Icons.send),
             onPressed: hasText.value
                 ? () {
                     _submitCommentWithController(
@@ -59,9 +64,6 @@ class PostCommentView extends HookConsumerWidget {
                     );
                   }
                 : null,
-            icon: const Icon(
-              Icons.send,
-            ),
           ),
         ],
       ),
@@ -105,11 +107,11 @@ class PostCommentView extends HookConsumerWidget {
                     ),
                   );
                 },
-                loading: () {
-                  return const LoadingAnimationView();
-                },
                 error: (error, stackTrace) {
                   return const ErrorAnimationView();
+                },
+                loading: () {
+                  return const LoadingAnimationView();
                 },
               ),
             ),
@@ -140,7 +142,7 @@ class PostCommentView extends HookConsumerWidget {
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
@@ -170,3 +172,4 @@ class PostCommentView extends HookConsumerWidget {
     }
   }
 }
+

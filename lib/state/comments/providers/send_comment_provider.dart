@@ -4,5 +4,5 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final sendCommentProvider =
     StateNotifierProvider<SendCommentNotifier, IsLoading>(
-  (_) => SendCommentNotifier(),
+  (ref) => SendCommentNotifier(),
 );

@@ -9,9 +9,9 @@ class PostVideoView extends HookWidget {
   final Post post;
 
   const PostVideoView({
-    super.key,
+    Key? key,
     required this.post,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,14 +36,11 @@ class PostVideoView extends HookWidget {
       case true:
         return AspectRatio(
           aspectRatio: post.aspectRatio,
-          child: VideoPlayer(
-            controller,
-          ),
+          child: VideoPlayer(controller),
         );
       case false:
         return const LoadingAnimationView();
       default:
-        //k nen duoc goi!
         return const ErrorAnimationView();
     }
   }

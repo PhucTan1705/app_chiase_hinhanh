@@ -31,7 +31,7 @@ class SendCommentNotifier extends StateNotifier<IsLoading> {
     } catch (_) {
       return false;
     } finally {
-      isLoading = true;
+      isLoading = false;
     }
   }
 }

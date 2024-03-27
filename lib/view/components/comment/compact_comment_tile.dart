@@ -1,33 +1,28 @@
-import 'package:chiase_hinhanh/state/posts/models/post.dart';
+import 'package:chiase_hinhanh/state/comments/models/comment.dart';
 import 'package:chiase_hinhanh/state/user_info/providers/user_info_model_provider.dart';
 import 'package:chiase_hinhanh/view/components/animations/small_error_animation_view.dart';
 import 'package:chiase_hinhanh/view/components/rich_two_parts_text.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class PostDisplayNameandMessageView extends ConsumerWidget {
-  final Post post;
-
-  const PostDisplayNameandMessageView({
+class CompactCommentTile extends ConsumerWidget {
+  final Comment comment;
+  const CompactCommentTile({
     super.key,
-    required this.post,
+    required this.comment,
   });
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final userInfoModel = ref.watch(
+    final userInfo = ref.watch(
       userInfoModelProvider(
-        post.userId,
+        comment.fromUserId,
       ),
     );
-    return userInfoModel.when(
-      data: (userInfoModel) {
-        return Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: RichTwoPartsText(
-            leftPart: userInfoModel.displayName,
-            rightPart: post.message,
-          ),
+    return userInfo.when(
+      data: (userInfo) {
+        return RichTwoPartsText(
+          leftPart: userInfo.displayName,
+          rightPart: comment.comment,
         );
       },
       error: (error, stackTrace) {
