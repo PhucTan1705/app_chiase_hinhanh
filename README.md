@@ -46,7 +46,7 @@ dev_dependencies:
   riverpod_lint: ^2.6.3
 ```
 
-[Learn More](https://nodejs.org/en/download/package-manager](https://riverpod.dev/docs/introduction/why_riverpod)
+[Learn More](https://riverpod.dev/docs/introduction/why_riverpod)
 
 ### 2. Getting started with Firebase
 
