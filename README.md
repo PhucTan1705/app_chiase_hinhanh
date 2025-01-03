@@ -1,3 +1,9 @@
+# Language
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/PhucTan1705/app_chiase_hinhanh/master/README.md)
+[![vn](https://img.shields.io/badge/lang-vn-red.svg)](https://github.com/PhucTan1705/app_chiase_hinhanh/master/README.VN.md)
+
+---
+
 # Photo Sharing App
 
 ## Overview:
