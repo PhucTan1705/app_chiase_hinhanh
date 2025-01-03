@@ -58,7 +58,7 @@ When you find a Firebase Extension that solves a need for your app or project, a
 
 If you're new to using Firebase in Flutter we recommend starting with:
 
-- [Get to know Firebase for Flutter](https://firebase.google.com/codelabs/firebase-get-to-know-flutter#0)
+[Get to know Firebase for Flutter](https://firebase.google.com/codelabs/firebase-get-to-know-flutter#0)
 
 ### 3. Set up Firebase
 
@@ -81,7 +81,7 @@ flutterfire configure
 
 [Learn More](https://firebase.flutter.dev/docs/overview/)
 
-- With Dart-only initialization now supported, manually configuring and installing platforms is no longer required
+- With Dart-only initialization now supported, manually configuring and installing platforms is no longer required. If you wish to view the documentation for manual initialization, you can learn more here:
 
 [Manual Installation](https://firebase.flutter.dev/docs/manual-installation)
 
