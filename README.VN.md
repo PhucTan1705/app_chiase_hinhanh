@@ -2,6 +2,8 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/PhucTan1705/app_chiase_hinhanh/blob/master/README.md)
 [![vn](https://img.shields.io/badge/lang-vn-red.svg)](https://github.com/PhucTan1705/app_chiase_hinhanh/blob/master/README.VN.md)
 
+---
+
 # Photo Sharing App
 
 ## Tổng quan:
