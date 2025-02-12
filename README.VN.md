@@ -94,7 +94,40 @@ flutterfire configure
 
 [Cài đặt thủ công](https://firebase.flutter.dev/docs/manual-installation)
 
-### 4. Cài đặt dự án:
+### 4. Quản lý người dùng
+
+Firebase Admin SDK cung cấp một API để quản lý người dùng Firebase Authentication với các quyền nâng cao. API quản lý người dùng dành cho quản trị viên cho phép bạn thực hiện các tác vụ sau từ một môi trường máy chủ an toàn:
+
+- Tạo người dùng mới mà không bị giới hạn tốc độ hoặc giới hạn số lần thực hiện.
+- Tra cứu người dùng theo các tiêu chí khác nhau như uid, email hoặc số điện thoại.
+- Liệt kê tất cả người dùng của một dự án cụ thể theo từng lô.
+- Truy cập siêu dữ liệu người dùng, bao gồm ngày tạo tài khoản và lần đăng nhập cuối cùng.
+- Xóa người dùng mà không cần mật khẩu hiện tại của họ.
+- Cập nhật thuộc tính người dùng, bao gồm cả mật khẩu, mà không cần đăng nhập dưới tư cách người dùng đó.
+- Xác minh email mà không cần thông qua quy trình xác minh ngoài luồng.
+- Thay đổi email của người dùng mà không cần gửi liên kết email để thu hồi thay đổi.
+- Tạo người dùng mới với số điện thoại mà không cần qua quy trình xác minh SMS.
+- Thay đổi số điện thoại của người dùng mà không cần qua quy trình xác minh SMS.
+- Cung cấp tài khoản người dùng ở trạng thái vô hiệu hóa ngoại tuyến và sau đó kiểm soát thời điểm kích hoạt lại.
+- Xây dựng bảng điều khiển người dùng tùy chỉnh phù hợp với hệ thống quản lý người dùng của ứng dụng cụ thể.
+
+<details>
+  <summary>Giao diện quản lý</summary>
+<div align="center">
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1HDqCV19uOMJG6-wsL3C8qDQrtyMHWzQ2" width="700" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1zkf1b7W1WJmBrGfn9Escw3pFy5dUNEq3" width="700" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1liqN7YR68-qWK4nGxvh_rBV5IlFzsauq" width="700" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1uO1iIZtGvJX5BDO2Pm2Vb1lHj4s70dSI" width="700" height="530"  hspace="10"></kbd></span>
+</div>
+</details>
+
+Trước khi bắt đầu:
+
+Để sử dụng API quản lý người dùng do Firebase Admin SDK cung cấp, bạn cần có một tài khoản dịch vụ. Hãy làm theo [hướng dẫn thiết lập](https://firebase.google.com/docs/admin/setup) để biết thêm thông tin về cách khởi tạo Admin SDK
+
+[Tìm hiểu thêm](https://firebase.google.com/docs/auth/admin)
+
+### 5. Cài đặt dự án:
 
 - Sao chép (clone) repo:
 ```
