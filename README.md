@@ -66,7 +66,37 @@ If you're new to using Firebase in Flutter we recommend starting with:
 
 [Get to know Firebase for Flutter](https://firebase.google.com/codelabs/firebase-get-to-know-flutter#0)
 
-### 3. Set up Firebase
+### 3. Manage Users 
+
+The Firebase Admin SDK provides an API for managing your Firebase Authentication users with elevated privileges. The admin user management API gives you the ability to programmatically complete the following tasks from a secure server environment:
+
+- Create new users without any throttling or rate limiting.
+- Look up users by different criteria such as uid, email or phone number.
+- List all the users of a specified project in batches.
+- Access user metadata including account creation date and last sign-in date.
+- Delete users without requiring their existing password.
+- Update user properties - including their password - without having to sign in as the user.
+- Verify emails without having to go through the out-of-band action flows for verifying emails.
+- Change a user's email without sending email links to revoke these changes.
+- Create a new user with a phone number without having to go through the SMS verification flow.
+- Change a user's phone number without having to go through the SMS verification flow.
+- Offline provision users in a disabled state and then later control when to enable them.
+- Build custom user consoles that are tailored to a specific application's user management system.
+
+<div align="center">
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1HDqCV19uOMJG6-wsL3C8qDQrtyMHWzQ2" width="300" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1zkf1b7W1WJmBrGfn9Escw3pFy5dUNEq3" width="300" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1liqN7YR68-qWK4nGxvh_rBV5IlFzsauq" width="300" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1uO1iIZtGvJX5BDO2Pm2Vb1lHj4s70dSI" width="300" height="530"  hspace="10"></kbd></span>
+</div>
+
+Before you begin:
+
+To use the user management API provided by the Firebase Admin SDK, you must have a service account. Follow the [setup instructions](https://firebase.google.com/docs/admin/setup) for more information on how to initialize the Admin SDK.
+
+[Learn more](https://firebase.google.com/docs/auth/admin)
+
+### 4. Set up Firebase
 
 - Before any Firebase services can be used, you must first install the firebase_core plugin, which is responsible for connecting your application to Firebase.
 
@@ -91,7 +121,7 @@ flutterfire configure
 
 [Manual Installation](https://firebase.flutter.dev/docs/manual-installation)
 
-### 4. Set up project:
+### 5. Set up project:
 
 - Clone the repo
 ```
