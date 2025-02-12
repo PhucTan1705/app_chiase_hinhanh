@@ -66,7 +66,32 @@ If you're new to using Firebase in Flutter we recommend starting with:
 
 [Get to know Firebase for Flutter](https://firebase.google.com/codelabs/firebase-get-to-know-flutter#0)
 
-### 3. Manage Users 
+### 3. Set up Firebase
+
+- Before any Firebase services can be used, you must first install the firebase_core plugin, which is responsible for connecting your application to Firebase.
+
+```
+# Install the plugin by running the following command from the project root:
+flutter pub add firebase_core
+```
+
+- Using the FlutterFire CLI
+
+```
+# Install the CLI if not already done so
+dart pub global activate flutterfire_cli
+
+# Run the `configure` command, select a Firebase project and platforms
+flutterfire configure
+```
+
+[Learn More](https://firebase.flutter.dev/docs/overview/)
+
+- With Dart-only initialization now supported, manually configuring and installing platforms is no longer required. If you wish to view the documentation for manual initialization, you can learn more here:
+
+[Manual Installation](https://firebase.flutter.dev/docs/manual-installation)
+
+### 4. Manage Users 
 
 The Firebase Admin SDK provides an API for managing your Firebase Authentication users with elevated privileges. The admin user management API gives you the ability to programmatically complete the following tasks from a secure server environment:
 
@@ -98,31 +123,6 @@ Before you begin:
 To use the user management API provided by the Firebase Admin SDK, you must have a service account. Follow the [setup instructions](https://firebase.google.com/docs/admin/setup) for more information on how to initialize the Admin SDK.
 
 [Learn more](https://firebase.google.com/docs/auth/admin)
-
-### 4. Set up Firebase
-
-- Before any Firebase services can be used, you must first install the firebase_core plugin, which is responsible for connecting your application to Firebase.
-
-```
-# Install the plugin by running the following command from the project root:
-flutter pub add firebase_core
-```
-
-- Using the FlutterFire CLI
-
-```
-# Install the CLI if not already done so
-dart pub global activate flutterfire_cli
-
-# Run the `configure` command, select a Firebase project and platforms
-flutterfire configure
-```
-
-[Learn More](https://firebase.flutter.dev/docs/overview/)
-
-- With Dart-only initialization now supported, manually configuring and installing platforms is no longer required. If you wish to view the documentation for manual initialization, you can learn more here:
-
-[Manual Installation](https://firebase.flutter.dev/docs/manual-installation)
 
 ### 5. Set up project:
 
