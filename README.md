@@ -84,10 +84,10 @@ The Firebase Admin SDK provides an API for managing your Firebase Authentication
 - Build custom user consoles that are tailored to a specific application's user management system.
 
 <div align="center">
-  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1HDqCV19uOMJG6-wsL3C8qDQrtyMHWzQ2" width="300" height="530"  hspace="10"></kbd></span>
-  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1zkf1b7W1WJmBrGfn9Escw3pFy5dUNEq3" width="300" height="530"  hspace="10"></kbd></span>
-  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1liqN7YR68-qWK4nGxvh_rBV5IlFzsauq" width="300" height="530"  hspace="10"></kbd></span>
-  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1uO1iIZtGvJX5BDO2Pm2Vb1lHj4s70dSI" width="300" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1HDqCV19uOMJG6-wsL3C8qDQrtyMHWzQ2" width="600" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1zkf1b7W1WJmBrGfn9Escw3pFy5dUNEq3" width="600" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1liqN7YR68-qWK4nGxvh_rBV5IlFzsauq" width="600" height="530"  hspace="10"></kbd></span>
+  <span><kbd><img src="https://drive.google.com/uc?export=view&id=1uO1iIZtGvJX5BDO2Pm2Vb1lHj4s70dSI" width="600" height="530"  hspace="10"></kbd></span>
 </div>
 
 Before you begin:
